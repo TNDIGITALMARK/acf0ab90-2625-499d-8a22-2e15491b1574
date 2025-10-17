@@ -54,12 +54,28 @@ export default function Home() {
               your vision to life with traditional craftsmanship and modern
               techniques
             </p>
-            <Link href="/about#contact">
+            <Link href="/about#contact" className="inline-block">
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 h-auto"
+                className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 h-auto
+                  relative overflow-hidden group
+                  transform transition-all duration-300 ease-out
+                  hover:scale-105 hover:shadow-2xl hover:shadow-primary/50
+                  active:scale-95
+                  animate-pulse-subtle
+                  before:absolute before:inset-0
+                  before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent
+                  before:translate-x-[-200%] before:transition-transform before:duration-700
+                  hover:before:translate-x-[200%]
+                  after:absolute after:inset-0 after:rounded-md
+                  after:shadow-[inset_0_1px_0_rgba(255,255,255,0.2)]
+                  border-2 border-white/10 hover:border-white/30"
               >
-                Schedule Your Free Consultation
+                <span className="relative z-10 inline-flex items-center gap-2 font-semibold tracking-wide">
+                  <span className="group-hover:animate-bounce-subtle">📅</span>
+                  Schedule Your Free Consultation
+                  <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
+                </span>
               </Button>
             </Link>
           </div>
