@@ -90,28 +90,28 @@ export default function Header() {
             <div className="flex flex-col gap-4">
               <Link
                 href="/"
-                className="text-black dark:text-foreground hover:text-primary font-medium transition-colors"
+                className="text-foreground hover:text-primary font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/portfolio"
-                className="text-black dark:text-foreground hover:text-primary font-medium transition-colors"
+                className="text-foreground hover:text-primary font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Portfolio
               </Link>
               <Link
                 href="/about"
-                className="text-black dark:text-foreground hover:text-primary font-medium transition-colors"
+                className="text-foreground hover:text-primary font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/about#contact"
-                className="text-black dark:text-foreground hover:text-primary font-medium transition-colors"
+                className="text-foreground hover:text-primary font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
