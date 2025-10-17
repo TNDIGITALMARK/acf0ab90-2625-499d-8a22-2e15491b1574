@@ -100,7 +100,7 @@ export default function Home() {
                     border-2 border-white/10 hover:border-white/30"
                 >
                   <span className="relative z-10 inline-flex items-center gap-2 font-semibold tracking-wide">
-                    Schedule Your Free Consultation
+                    Book a Free Consultation
                     <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
                   </span>
                 </Button>
