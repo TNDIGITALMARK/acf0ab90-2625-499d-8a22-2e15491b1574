@@ -5,8 +5,9 @@ HERITAGE LOG BUILDERS DESIGN SYSTEM
 Extracted from design reference: ai-generated-preview.png
 
 COLOR PALETTE:
-- Primary Dark Green: #2F5233 (Forest/Pine Green for CTAs and headers)
+- Primary Rich Brown: #8B5A2B (Deep warm brown for CTAs and headers)
 - Warm Wood Brown: #8B4513 (Natural wood tones)
+- Amber Accent: #B8733E (Warm amber for accents)
 - Light Cream/Beige: #F5F5F0 (Background, cards)
 - Warm Gray: #D4CFC4 (Borders, subtle backgrounds)
 - Dark Text: #2C2C2C (Primary text)
@@ -43,20 +44,20 @@ All colors MUST be HSL.
   --popover: 0 0% 100%;
   --popover-foreground: 0 0% 17%;
 
-  /* Primary - Forest Green for CTAs */
-  --primary: 130 30% 25%; /* Deep forest green #2F5233 */
+  /* Primary - Rich Brown for CTAs */
+  --primary: 25 55% 35%; /* Deep warm brown */
   --primary-foreground: 0 0% 100%;
 
   /* Secondary - Warm wood tones */
-  --secondary: 25 60% 45%; /* Warm brown */
+  --secondary: 35 60% 45%; /* Amber brown */
   --secondary-foreground: 0 0% 100%;
 
   /* Muted - Warm grays */
   --muted: 40 10% 85%; /* Light warm gray */
   --muted-foreground: 0 0% 40%;
 
-  /* Accent - Pine/forest accent */
-  --accent: 130 35% 30%;
+  /* Accent - Warm amber accent */
+  --accent: 30 50% 40%;
   --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84.2% 60.2%;
@@ -64,60 +65,60 @@ All colors MUST be HSL.
 
   --border: 40 15% 82%; /* Warm gray border */
   --input: 40 15% 82%;
-  --ring: 130 30% 25%;
+  --ring: 25 55% 35%;
 
   --radius: 0.5rem;
 
   --sidebar-background: 0 0% 98%;
   --sidebar-foreground: 0 0% 17%;
-  --sidebar-primary: 130 30% 25%;
+  --sidebar-primary: 25 55% 35%;
   --sidebar-primary-foreground: 0 0% 100%;
   --sidebar-accent: 40 10% 95%;
   --sidebar-accent-foreground: 0 0% 17%;
   --sidebar-border: 40 15% 88%;
-  --sidebar-ring: 130 30% 25%;
+  --sidebar-ring: 25 55% 35%;
 }
 
 .dark {
   /* Dark theme with rustic cabin aesthetic */
-  --background: 130 15% 8%; /* Deep forest night */
+  --background: 30 15% 8%; /* Deep warm night */
   --foreground: 40 20% 95%; /* Warm cream text */
 
-  --card: 130 15% 10%; /* Slightly lighter than background */
+  --card: 30 15% 10%; /* Slightly lighter than background */
   --card-foreground: 40 20% 95%;
 
-  --popover: 130 15% 10%;
+  --popover: 30 15% 10%;
   --popover-foreground: 40 20% 95%;
 
-  /* Primary - Light forest green for dark mode */
-  --primary: 130 40% 65%; /* Lighter green for visibility */
-  --primary-foreground: 130 15% 8%;
+  /* Primary - Light amber/brown for dark mode */
+  --primary: 30 50% 60%; /* Lighter warm brown for visibility */
+  --primary-foreground: 30 15% 8%;
 
   /* Secondary - Warm wood tones for dark mode */
-  --secondary: 25 50% 50%;
+  --secondary: 35 50% 50%;
   --secondary-foreground: 0 0% 100%;
 
-  --muted: 130 10% 20%;
+  --muted: 30 10% 20%;
   --muted-foreground: 40 15% 70%;
 
-  --accent: 130 35% 55%;
+  --accent: 35 45% 55%;
   --accent-foreground: 0 0% 100%;
 
   --destructive: 0 70% 50%;
   --destructive-foreground: 0 0% 100%;
 
-  --border: 130 10% 25%; /* Subtle forest border */
-  --input: 130 10% 25%;
-  --ring: 130 40% 65%;
+  --border: 30 10% 25%; /* Subtle warm border */
+  --input: 30 10% 25%;
+  --ring: 30 50% 60%;
 
-  --sidebar-background: 130 15% 10%;
+  --sidebar-background: 30 15% 10%;
   --sidebar-foreground: 40 20% 95%;
-  --sidebar-primary: 130 40% 65%;
-  --sidebar-primary-foreground: 130 15% 8%;
-  --sidebar-accent: 130 10% 20%;
+  --sidebar-primary: 30 50% 60%;
+  --sidebar-primary-foreground: 30 15% 8%;
+  --sidebar-accent: 30 10% 20%;
   --sidebar-accent-foreground: 40 20% 95%;
-  --sidebar-border: 130 10% 25%;
-  --sidebar-ring: 130 40% 65%;
+  --sidebar-border: 30 10% 25%;
+  --sidebar-ring: 30 50% 60%;
 }
 
 @theme {
