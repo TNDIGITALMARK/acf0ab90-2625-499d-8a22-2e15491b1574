@@ -18,8 +18,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elegant Flora Boutique",
-  description: "Beautiful AI-powered website creation platform",
+  title: "Heritage Log Builders - Custom Log Cabins Since 1995",
+  description: "From cozy weekend retreats to luxury mountain estates, we bring your vision to life with traditional craftsmanship and modern techniques.",
 };
 
 export default function RootLayout({

@@ -1,48 +1,81 @@
 @import "tailwindcss";
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/*
+HERITAGE LOG BUILDERS DESIGN SYSTEM
+Extracted from design reference: ai-generated-preview.png
+
+COLOR PALETTE:
+- Primary Dark Green: #2F5233 (Forest/Pine Green for CTAs and headers)
+- Warm Wood Brown: #8B4513 (Natural wood tones)
+- Light Cream/Beige: #F5F5F0 (Background, cards)
+- Warm Gray: #D4CFC4 (Borders, subtle backgrounds)
+- Dark Text: #2C2C2C (Primary text)
+- White: #FFFFFF (Clean backgrounds)
+
+TYPOGRAPHY:
+- Headings: Bold serif/sans-serif, strong hierarchy
+- Body: Clean sans-serif, readable
+- Logo: Small pine icon with "HERITAGE LOG CABINS" text
+
+SPACING & LAYOUT:
+- Large hero sections with full-width imagery
+- Grid-based project cards (2-3 columns)
+- Generous white space and padding
+- Card overlays with gradient backgrounds on images
+
+IMAGE TREATMENTS:
+- Natural outdoor photography with warm tones
+- Subtle vignette/gradient overlays on hero images
+- Border radius on project cards: ~8px
+- Hover effects with scale/opacity changes
+
 All colors MUST be HSL.
 */
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 222.2 84% 4.9%;
+  /* Base colors - Rustic cabin theme */
+  --background: 40 20% 96%; /* Warm cream background */
+  --foreground: 0 0% 17%; /* Dark charcoal text */
 
-  --card: 0 0% 100%;
-  --card-foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%; /* White cards */
+  --card-foreground: 0 0% 17%;
 
   --popover: 0 0% 100%;
-  --popover-foreground: 222.2 84% 4.9%;
+  --popover-foreground: 0 0% 17%;
 
-  --primary: 222.2 47.4% 11.2%;
-  --primary-foreground: 210 40% 98%;
+  /* Primary - Forest Green for CTAs */
+  --primary: 130 30% 25%; /* Deep forest green #2F5233 */
+  --primary-foreground: 0 0% 100%;
 
-  --secondary: 210 40% 96.1%;
-  --secondary-foreground: 222.2 47.4% 11.2%;
+  /* Secondary - Warm wood tones */
+  --secondary: 25 60% 45%; /* Warm brown */
+  --secondary-foreground: 0 0% 100%;
 
-  --muted: 210 40% 96.1%;
-  --muted-foreground: 215.4 16.3% 46.9%;
+  /* Muted - Warm grays */
+  --muted: 40 10% 85%; /* Light warm gray */
+  --muted-foreground: 0 0% 40%;
 
-  --accent: 210 40% 96.1%;
-  --accent-foreground: 222.2 47.4% 11.2%;
+  /* Accent - Pine/forest accent */
+  --accent: 130 35% 30%;
+  --accent-foreground: 0 0% 100%;
 
   --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 210 40% 98%;
+  --destructive-foreground: 0 0% 100%;
 
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
-  --ring: 222.2 84% 4.9%;
+  --border: 40 15% 82%; /* Warm gray border */
+  --input: 40 15% 82%;
+  --ring: 130 30% 25%;
 
   --radius: 0.5rem;
 
   --sidebar-background: 0 0% 98%;
-  --sidebar-foreground: 240 5.3% 26.1%;
-  --sidebar-primary: 240 5.9% 10%;
-  --sidebar-primary-foreground: 0 0% 98%;
-  --sidebar-accent: 240 4.8% 95.9%;
-  --sidebar-accent-foreground: 240 5.9% 10%;
-  --sidebar-border: 220 13% 91%;
-  --sidebar-ring: 217.2 91.2% 59.8%;
+  --sidebar-foreground: 0 0% 17%;
+  --sidebar-primary: 130 30% 25%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 40 10% 95%;
+  --sidebar-accent-foreground: 0 0% 17%;
+  --sidebar-border: 40 15% 88%;
+  --sidebar-ring: 130 30% 25%;
 }
 
 .dark {
