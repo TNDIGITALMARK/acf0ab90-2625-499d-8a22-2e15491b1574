@@ -5,12 +5,13 @@ import Image from "next/image";
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+    <header className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -52,25 +53,35 @@ export default function Header() {
             </Link>
           </nav>
 
-          {/* Phone Number */}
-          <div className="hidden lg:flex items-center gap-2 text-primary font-semibold">
-            <Phone className="h-5 w-5" />
-            <span className="text-lg">555-CABINS-1</span>
+          {/* Phone Number & Theme Toggle */}
+          <div className="hidden lg:flex items-center gap-4">
+            <div className="flex items-center gap-2 text-primary font-semibold">
+              <Phone className="h-5 w-5" />
+              <span className="text-lg">555-CABINS-1</span>
+            </div>
+            <ThemeToggle />
           </div>
 
-          {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
-          </Button>
+          {/* Mobile Actions */}
+          <div className="flex items-center gap-2 md:hidden">
+            <ThemeToggle />
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? (
+                <X className="h-6 w-6 text-foreground" />
+              ) : (
+                <Menu className="h-6 w-6 text-foreground" />
+              )}
+            </Button>
+          </div>
+
+          {/* Desktop Theme Toggle (for medium screens without phone) */}
+          <div className="hidden md:flex lg:hidden">
+            <ThemeToggle />
+          </div>
         </div>
 
         {/* Mobile Menu */}
