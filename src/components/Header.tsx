@@ -46,6 +46,12 @@ export default function Header() {
               About
             </Link>
             <Link
+              href="/quote"
+              className="text-foreground hover:text-primary font-medium transition-colors"
+            >
+              Get a Quote
+            </Link>
+            <Link
               href="/about#contact"
               className="text-foreground hover:text-primary font-medium transition-colors"
             >
@@ -108,6 +114,13 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
+              </Link>
+              <Link
+                href="/quote"
+                className="text-foreground hover:text-primary font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Get a Quote
               </Link>
               <Link
                 href="/about#contact"
