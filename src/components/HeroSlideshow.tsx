@@ -15,28 +15,52 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    image: "/generated/hero-cabin-main.png",
+    image: "/generated/hero-cabin-main-new.png",
     title: "Custom Log Cabins Built to Last Generations",
     subtitle: "From cozy weekend retreats to luxury mountain estates, we bring your vision to life with traditional craftsmanship and modern techniques",
-    alt: "Luxury Log Cabin in Mountain Setting"
+    alt: "Luxury Log Cabin in Mountain Setting at Golden Hour"
   },
   {
-    image: "/generated/hero-cabin-winter.png",
+    image: "/generated/hero-cabin-winter-new.png",
     title: "Year-Round Comfort & Timeless Beauty",
     subtitle: "Experience the warmth and elegance of handcrafted log homes designed for every season and built to withstand the test of time",
-    alt: "Winter Log Cabin with Snow"
+    alt: "Cozy Winter Log Cabin with Snow and Warm Lighting"
   },
   {
-    image: "/generated/hero-cabin-lakeside.png",
+    image: "/generated/hero-cabin-lakeside-new.png",
     title: "Lakeside Living at Its Finest",
     subtitle: "Create unforgettable memories in a custom waterfront cabin where nature meets luxury and tranquility becomes your everyday",
-    alt: "Lakeside Log Cabin at Sunrise"
+    alt: "Stunning Lakeside Log Cabin at Sunrise with Mountain Reflection"
   },
   {
-    image: "/generated/hero-cabin-autumn.png",
+    image: "/generated/hero-cabin-autumn-new.png",
     title: "Rustic Charm Meets Modern Comfort",
     subtitle: "Embrace the beauty of all seasons in a thoughtfully designed cabin that blends authentic craftsmanship with contemporary amenities",
-    alt: "Autumn Forest Log Cabin"
+    alt: "Traditional Log Cabin in Vibrant Autumn Forest"
+  },
+  {
+    image: "/generated/hero-cabin-sunset-estate.png",
+    title: "Architectural Excellence & Luxury Living",
+    subtitle: "Grand estate designs featuring multi-level layouts, stone accents, and breathtaking outdoor spaces where sophistication meets mountain living",
+    alt: "Grand Log Cabin Estate at Sunset with Outdoor Fireplace"
+  },
+  {
+    image: "/generated/hero-cabin-spring-family.png",
+    title: "Where Family Memories Are Made",
+    subtitle: "Build your family's forever retreat in a welcoming cabin surrounded by nature's beauty, designed for laughter, love, and lasting traditions",
+    alt: "Family Log Cabin in Spring Meadow with Wildflowers"
+  },
+  {
+    image: "/generated/hero-cabin-modern-luxury.png",
+    title: "Modern Design Meets Timeless Tradition",
+    subtitle: "Contemporary luxury cabins with floor-to-ceiling windows, sleek lines, and cutting-edge amenities that redefine mountain sophistication",
+    alt: "Modern Luxury Log Cabin with Glass Windows and Infinity Hot Tub"
+  },
+  {
+    image: "/generated/hero-cabin-alpine-summer.png",
+    title: "Master Craftsmanship in Every Detail",
+    subtitle: "Experience the artistry of hand-hewn timber and precision construction in stunning alpine settings that showcase our heritage of excellence",
+    alt: "Handcrafted Log Cabin in Alpine Meadow with Mountain Vista"
   }
 ];
 
