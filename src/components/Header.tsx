@@ -19,9 +19,9 @@ export default function Header() {
             <Image
               src="/generated/logo.png"
               alt="Heritage Log Builders"
-              width={50}
-              height={50}
-              className="h-12 w-auto"
+              width={80}
+              height={80}
+              className="h-20 w-auto"
             />
           </Link>
 
