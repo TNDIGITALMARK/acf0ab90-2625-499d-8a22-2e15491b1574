@@ -18,7 +18,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <div className="relative h-16 w-48">
               <Image
-                src="/generated/logo.png"
+                src="/generated/heritage-log-builders-logo.png"
                 alt="Heritage Log Builders"
                 fill
                 className="object-contain"
