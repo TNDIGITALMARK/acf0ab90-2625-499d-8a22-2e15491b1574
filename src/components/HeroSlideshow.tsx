@@ -161,7 +161,7 @@ export default function HeroSlideshow() {
                 border-2 border-white/10 hover:border-white/30"
             >
               <span className="relative z-10 inline-flex items-center gap-2 font-semibold tracking-wide">
-                Book a Free Call
+                Book a Free Quote
                 <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
               </span>
             </Button>
