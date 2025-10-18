@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
@@ -21,6 +20,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HeroSlideshow from "@/components/HeroSlideshow";
 import ProjectCard from "@/components/ProjectCard";
 import StatCard from "@/components/StatCard";
 import ProcessStep from "@/components/ProcessStep";
@@ -55,66 +55,8 @@ export default function Home() {
       <Header />
 
       <main className="flex-grow">
-        {/* Hero Section */}
-        <section className="relative h-[600px] md:h-[700px] flex items-center justify-center overflow-hidden">
-          <Image
-            src="/generated/hero-cabin-main.png"
-            alt="Luxury Log Cabin"
-            fill
-            className="object-cover scale-105 animate-[scale-in_1.5s_ease-out]"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/60" />
-
-          {/* Animated overlay elements */}
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/30" />
-          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
-
-          <div className="relative z-10 container mx-auto px-4 text-center text-white">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight
-              animate-[fade-in-down_0.8s_ease-out]">
-              Custom Log Cabins Built to<br />Last Generations
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-white/90
-              animate-[fade-in-up_0.8s_ease-out_0.2s_both]">
-              From cozy weekend retreats to luxury mountain estates, we bring
-              your vision to life with traditional craftsmanship and modern
-              techniques
-            </p>
-            <div className="animate-[fade-in-up_0.8s_ease-out_0.4s_both]">
-              <Link href="/about#contact" className="inline-block">
-                <Button
-                  size="lg"
-                  className="bg-primary hover:bg-primary/90 text-white text-lg px-8 py-6 h-auto
-                    relative overflow-hidden group
-                    transform transition-all duration-300 ease-out
-                    hover:scale-105 hover:shadow-2xl hover:shadow-primary/50
-                    active:scale-95
-                    animate-pulse-subtle
-                    before:absolute before:inset-0
-                    before:bg-gradient-to-r before:from-transparent before:via-white/20 before:to-transparent
-                    before:translate-x-[-200%] before:transition-transform before:duration-700
-                    hover:before:translate-x-[200%]
-                    after:absolute after:inset-0 after:rounded-md
-                    after:shadow-[inset_0_1px_0_rgba(255,255,255,0.2)]
-                    border-2 border-white/10 hover:border-white/30"
-                >
-                  <span className="relative z-10 inline-flex items-center gap-2 font-semibold tracking-wide">
-                    Book a Free Consultation
-                    <span className="transform transition-transform duration-300 group-hover:translate-x-1">→</span>
-                  </span>
-                </Button>
-              </Link>
-            </div>
-
-            {/* Floating scroll indicator */}
-            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
-              <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
-                <div className="w-1 h-2 bg-white/70 rounded-full animate-bounce" />
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Hero Slideshow Section */}
+        <HeroSlideshow />
 
         {/* Statistics Section */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-primary/5 via-background to-accent/5">
