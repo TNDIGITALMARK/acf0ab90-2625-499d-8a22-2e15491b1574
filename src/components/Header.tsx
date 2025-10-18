@@ -15,14 +15,16 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <Image
-              src="/generated/logo.png"
-              alt="Heritage Log Builders"
-              width={80}
-              height={80}
-              className="h-20 w-auto"
-            />
+          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <div className="relative h-16 w-48">
+              <Image
+                src="/generated/logo.png"
+                alt="Heritage Log Builders"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
